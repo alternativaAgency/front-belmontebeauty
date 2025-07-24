@@ -1,8 +1,6 @@
 # Welcome to MkDocs
 
-For full documentation visit [BUILD_SHA_HERE](https://www.mateusloubach.github.io/front-belmontebeauty/BUILD_SHA_HERE/).
-
-current version `BUILD_SHA_HERE`
+For full documentation visit [BUILD_SHA_HERE](https://alternativaagency.github.io/front-belmontebeauty/BUILD_SHA_HERE/).
 
 ## Commands
 
@@ -13,7 +11,9 @@ current version `BUILD_SHA_HERE`
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    documentation/
+        mkdocs.yml    # The configuration file.
+        docs/
+            index.md  # The documentation homepage.
+            ...       # Other pages coming soon.
+
