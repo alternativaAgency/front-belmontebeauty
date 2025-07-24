@@ -21,6 +21,7 @@ theme:
       accent: pink
 nav:
   - Home: index.md
+  - Timeline: script.md
 
 copyright: Copyright &copy; 2025 Mateus Loubach
 extra:

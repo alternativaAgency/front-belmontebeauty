@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Dark */
+  /* color-scheme: light dark;
+    color: light-dark(#333333, #efefec);
+    background-color: light-dark(#efedea, #242424); */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.authLayout {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.clerk-auth {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-top: 1rem;
+  text-align: center;
+}
