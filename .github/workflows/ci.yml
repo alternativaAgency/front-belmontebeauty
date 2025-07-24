@@ -83,14 +83,14 @@ jobs:
 
       - name: Inject SHA into docs
         run: |
-          sed -i "s/BUILD_SHA_HERE/${SHA}/g" docs/index.md
+            sed -i "s/BUILD_SHA_HERE/${SHA}/g" docs/index.md
 
       # ————— (7) First‑time deploy: initialize gh‑pages —————
-      - name: Initial MkDocs Deploy (branch init)
+      - name: init commit - Deploy MkDocs
         if: env.EXISTS == 'false'
         run: mkdocs gh-deploy --force
 
-      - name: Done (first‑time only)
+      - name: init commit - Create gh-pages branch
         if: env.EXISTS == 'false'
         run: echo "gh-pages created; next docs change will version with Mike."
 
@@ -102,7 +102,7 @@ jobs:
           COUNT=$(git log --pretty=format:"%h" -- documentation/ | wc -l | tr -d ' ')
           echo "COUNT=$COUNT" >> $GITHUB_ENV
 
-      # ————— (9) Compute version identifiers (SHA preview) —————
+     # ————— (9) Compute version identifiers (SHA preview) —————
       - name: Compute Version Identifier
         run: |
           # 1) Get full commit SHA
@@ -115,6 +115,7 @@ jobs:
           # 3) Export for downstream steps
           echo "VERSION=$SHORT_SHA" >> $GITHUB_ENV
           echo "VERSION_LABEL=$SHORT_SHA" >> $GITHUB_ENV
+
 
       # ————— (10) Deploy docs with Mike using custom slug & title —————
       - name: Deploy docs with customSlug & title
