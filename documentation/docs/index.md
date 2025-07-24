@@ -1,6 +1,8 @@
 # Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+For full documentation visit [BUILD_SHA_HERE](https://www.mateusloubach.github.io/front-belmontebeauty/BUILD_SHA_HERE/).
+
+current version `BUILD_SHA_HERE`
 
 ## Commands
 
